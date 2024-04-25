@@ -32,6 +32,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     // 3.UIWindow를 초기화 해주고 있다. UIWindow인스턴스를 생성해주고, 이를 windowScene에 연결을 해주었다.
         let navigationController = UINavigationController(rootViewController: ViewController())
         // UINavigationController인스턴스도 생성해주었다. 다음 이 네비게이션 컨트롤러의 root View controller로
+        //**  rootViewController는 storyboard상에서 IsInitialViewController 로 설정해주는 것과 유사합니다!
         self.window?.rootViewController = navigationController
     // 4. 새로운viewController인스턴스를 설정해주었다.
         self.window?.makeKeyAndVisible()
