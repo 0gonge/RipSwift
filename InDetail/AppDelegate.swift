@@ -46,7 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // 그렇기 때문에 sceneSesssions에는 제거된 UI씬들이 모여있다.
         // 여기에서는 이 메소드는 뭘 해줄 것이냐?
         // 바로바로 메모리 해제 하고, 씬에 연결되어있는 리소스들도 해제를 해준다. 그러면 캐시도 클린해지겠지?
-        // 상태 저장도 가능하고, 로깅이나 분석 시에도 활용이 가능하다. scene이 종료된 원인, 아니면 시점을 로깅하여 앱의 분석 데이터에 기록할 수 있다.
+        // 상태 저장도 가능하고, 로깅이나 분석 시에도 활용이 가능하다. scene이 종료된 원인,아니면 시점을 로깅하여 앱의 분석 데이터에 기록할 수 있다. 
         // Called when the user discards a scene session.
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.

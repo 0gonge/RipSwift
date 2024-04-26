@@ -13,8 +13,6 @@
 		5C78FA972BDA2BD200E8499C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5C78FA962BDA2BD200E8499C /* Base */; };
 		5C78FA992BDA2BD300E8499C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C78FA982BDA2BD300E8499C /* Assets.xcassets */; };
 		5C78FA9C2BDA2BD300E8499C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5C78FA9B2BDA2BD300E8499C /* Base */; };
-		5C78FAA42BDA3A4F00E8499C /* practice1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C78FAA32BDA3A4F00E8499C /* practice1.swift */; };
-		5C78FAA62BDA62E500E8499C /* practice2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C78FAA52BDA62E500E8499C /* practice2.swift */; };
 		5C78FAA92BDACAA600E8499C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C78FAA82BDACAA600E8499C /* LoginViewController.swift */; };
 		5C78FAB32BDAD20500E8499C /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C78FAAA2BDAD20400E8499C /* Pretendard-Thin.otf */; };
 		5C78FAB42BDAD20500E8499C /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C78FAAB2BDAD20400E8499C /* Pretendard-Black.otf */; };
@@ -25,6 +23,7 @@
 		5C78FAB92BDAD20500E8499C /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C78FAB02BDAD20400E8499C /* Pretendard-Bold.otf */; };
 		5C78FABA2BDAD20500E8499C /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C78FAB12BDAD20400E8499C /* Pretendard-ExtraLight.otf */; };
 		5C78FABB2BDAD20500E8499C /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C78FAB22BDAD20500E8499C /* Pretendard-ExtraBold.otf */; };
+		5C78FACF2BDBB8DC00E8499C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C78FACE2BDBB8DC00E8499C /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +35,6 @@
 		5C78FA982BDA2BD300E8499C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C78FA9B2BDA2BD300E8499C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C78FA9D2BDA2BD300E8499C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5C78FAA32BDA3A4F00E8499C /* practice1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = practice1.swift; sourceTree = "<group>"; };
-		5C78FAA52BDA62E500E8499C /* practice2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = practice2.swift; sourceTree = "<group>"; };
 		5C78FAA82BDACAA600E8499C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5C78FAAA2BDAD20400E8499C /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
 		5C78FAAB2BDAD20400E8499C /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
@@ -48,6 +45,7 @@
 		5C78FAB02BDAD20400E8499C /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
 		5C78FAB12BDAD20400E8499C /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
 		5C78FAB22BDAD20500E8499C /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
+		5C78FACE2BDBB8DC00E8499C /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +95,6 @@
 				5C78FAAA2BDAD20400E8499C /* Pretendard-Thin.otf */,
 				5C78FA9A2BDA2BD300E8499C /* LaunchScreen.storyboard */,
 				5C78FA9D2BDA2BD300E8499C /* Info.plist */,
-				5C78FAA32BDA3A4F00E8499C /* practice1.swift */,
-				5C78FAA52BDA62E500E8499C /* practice2.swift */,
 			);
 			path = InDetail;
 			sourceTree = "<group>";
@@ -107,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				5C78FAA82BDACAA600E8499C /* LoginViewController.swift */,
+				5C78FACE2BDBB8DC00E8499C /* WelcomeViewController.swift */,
 			);
 			path = 1st;
 			sourceTree = "<group>";
@@ -192,11 +189,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C78FAA92BDACAA600E8499C /* LoginViewController.swift in Sources */,
-				5C78FAA62BDA62E500E8499C /* practice2.swift in Sources */,
 				5C78FA942BDA2BD200E8499C /* ViewController.swift in Sources */,
 				5C78FA902BDA2BD200E8499C /* AppDelegate.swift in Sources */,
-				5C78FAA42BDA3A4F00E8499C /* practice1.swift in Sources */,
 				5C78FA922BDA2BD200E8499C /* SceneDelegate.swift in Sources */,
+				5C78FACF2BDBB8DC00E8499C /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
