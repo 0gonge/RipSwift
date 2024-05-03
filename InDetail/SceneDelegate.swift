@@ -24,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSess34ion` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
     // 2. 안전하게 guard let으로 포장을 해준 모습이다.
         // scene 인스턴스를 UIWindowScene 타입으로 받아주고, 이게 아닐 경우 (scene이 uiwindowscene이 아닐 경우) 진행을 하지 않는다.

@@ -47,6 +47,7 @@ final class WelcomeViewController: UIViewController {
         button.setTitle("로그인하기", for: .normal)
         button.setTitleColor(UIColor(red: 172/255, green: 176/255, blue: 185/255, alpha: 1), for: .normal)
         button.titleLabel?.font = UIFont(name: "Pretendard-Bold", size: 18)
+        button.addTarget(self, action: #selector(backToLoginButtonDidTap), for: .touchUpInside)
         return button
         //backgroundColor, titlecolor의 선언방식이 다른 이유가 궁금했다.
         //button.backgroundColor = UIColor(red: 221/255, green: 222/255, blue: 227/255, alpha: 1)
@@ -62,13 +63,31 @@ final class WelcomeViewController: UIViewController {
 
     }()
     
+    var id: String?
+    //옵셔널로 선언을 해 준다. idTextField.text의 값은 String? 이다.
+    //텍스트필드 값이 입력이 되었을 수도~ 아닐 수도.
+    //값이 할당 된 옵셔널 변수는 Optional이 감싸져서 나온다!!
+    //그럼 안전하게 값을 일치시켜주는 바인딩이 필요할 것 같다.
+    //if let, guard let
     
+    func setLabelText(id: String?){
+        self.id = id
+    }
     
+    private func bindID(){
+        guard let idText = id else{return}
+        self.welcomeLabel.text = "\(idText)님 \n반가워요!"
+    }
+    // 아이디 입력 받을 전역 변수 선언 해주고, 화면의 라벨과 받아온 변수를 연결해줌.
+    // 이 함수를 viewDidLoad에서 호출.
+    // guard let 구문 사용, nil값일 때는 아무것도 하지 않고, nil 값이 아니라면 그 아래 코드를 통해서 로그인 뷰에서 넘겨받은 id값을 사용. 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.backgroundColor = .white
         setLayout()
+        
+        bindID()
     }
     
     private func setLayout() {
@@ -91,5 +110,18 @@ final class WelcomeViewController: UIViewController {
             //forEach 메서드에서는 각 반복마다 하나의 요소만을 처리 -> 단일 요소만을 참조한다!! 
             //클로저에 하나의 매개변수만 전달되므로, .forEach 클로저 내에서는 $0만 사용
         }
+        
     }
+    
+    
+    @objc
+    private func backToLoginButtonDidTap(){
+        if self.navigationController == nil{
+            self.dismiss(animated: true)
+        } else {
+            self.navigationController?.popViewController(animated: true)
+        }
+    }
+    //화면 이동 시, present 이동은 navigationController를 가지지 않고, push이동은 welcomeVC가 navigationController를 가지고 있다. 그래서 이에 따라 분기처리를 해ㅐ 준 것이다. navigationController를 가지고 있으면 pop해주고, 그렇지 않을 경우에 dismiss.
+    
 }
