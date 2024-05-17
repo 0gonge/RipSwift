@@ -61,7 +61,7 @@ final class LoginViewController_DelegatePattern: UIViewController {
         welcomeViewController.delegate = self
         //WelcomeVC에서 할 일 여기 LoginVC에서 대신 할게라고 말해주는 부분.
         //착하네 그러고보니.. 내가 할게라고 하는게 귀엽다
-        welcomeViewController.setLabelText(id: idTextField.text)
+        welcomeViewController.setLabelText(id: idTextField.text) //String
         self.navigationController?.pushViewController(welcomeViewController, animated: true)
     }
     //구조를 다 잡아주었으면, 이제 어떻게 보면 기능 부분인데, 로그인 버튼을 누르면 웰컴뷰컨을 push하기 위한 코드이다. 웰컴 뷰 컨에는 로그인 뷰컨에서 데이터를 받은 부분을 띄워주어야 하기 때문에 그 부분을 여기에서 대신 해 준다.
@@ -88,7 +88,6 @@ final class LoginViewController_DelegatePattern: UIViewController {
     //위에서 정의해준 요소들을 setLayout함수에 묶어주고, subview로 forEach 각각 넣어주었다.
     
 }
-
 extension LoginViewController_DelegatePattern:
     DataBindProtocol {
     func dataBind(id: String?) {

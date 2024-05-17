@@ -85,7 +85,7 @@ final class WelcomeViewController_DelegatePattern: UIViewController {
     //self.id는 이 웰컴뷰컨 위쪽에 변수로 선언해둔 id를 뜻한다.
     //이때 옵셔널로 선언이 되어있어서, string일 수도, nil일 수도 있다.
     // = id 이거는 외부에서 받아오는 값이다.
-    //
+    //로그인 뷰컨의 pushToWelcomeVC내에서 쓰이고 있다. 
     
     override func viewDidLoad() {
         super.viewDidLoad()
