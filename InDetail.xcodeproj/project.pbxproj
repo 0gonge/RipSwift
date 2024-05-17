@@ -24,6 +24,10 @@
 		5C78FABA2BDAD20500E8499C /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C78FAB12BDAD20400E8499C /* Pretendard-ExtraLight.otf */; };
 		5C78FABB2BDAD20500E8499C /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C78FAB22BDAD20500E8499C /* Pretendard-ExtraBold.otf */; };
 		5C78FACF2BDBB8DC00E8499C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C78FACE2BDBB8DC00E8499C /* WelcomeViewController.swift */; };
+		5C78FB1C2BE4B75100E8499C /* LoginViewController_DelegatePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C78FB1B2BE4B75100E8499C /* LoginViewController_DelegatePattern.swift */; };
+		5C78FB202BE4B77500E8499C /* WelcomeViewController_DelegatePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C78FB1F2BE4B77500E8499C /* WelcomeViewController_DelegatePattern.swift */; };
+		5C78FB222BE5082E00E8499C /* LoginViewController_Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C78FB212BE5082E00E8499C /* LoginViewController_Closure.swift */; };
+		5C78FB242BE5083D00E8499C /* WelcomeViewController_Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C78FB232BE5083D00E8499C /* WelcomeViewController_Closure.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +50,10 @@
 		5C78FAB12BDAD20400E8499C /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
 		5C78FAB22BDAD20500E8499C /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
 		5C78FACE2BDBB8DC00E8499C /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		5C78FB1B2BE4B75100E8499C /* LoginViewController_DelegatePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_DelegatePattern.swift; sourceTree = "<group>"; };
+		5C78FB1F2BE4B77500E8499C /* WelcomeViewController_DelegatePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController_DelegatePattern.swift; sourceTree = "<group>"; };
+		5C78FB212BE5082E00E8499C /* LoginViewController_Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_Closure.swift; sourceTree = "<group>"; };
+		5C78FB232BE5083D00E8499C /* WelcomeViewController_Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController_Closure.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +86,7 @@
 		5C78FA8E2BDA2BD200E8499C /* InDetail */ = {
 			isa = PBXGroup;
 			children = (
+				5C78FB1A2BE4B73700E8499C /* 2nd */,
 				5C78FAA72BDACA8C00E8499C /* 1st */,
 				5C78FA8F2BDA2BD200E8499C /* AppDelegate.swift */,
 				5C78FA912BDA2BD200E8499C /* SceneDelegate.swift */,
@@ -106,6 +115,17 @@
 				5C78FACE2BDBB8DC00E8499C /* WelcomeViewController.swift */,
 			);
 			path = 1st;
+			sourceTree = "<group>";
+		};
+		5C78FB1A2BE4B73700E8499C /* 2nd */ = {
+			isa = PBXGroup;
+			children = (
+				5C78FB1B2BE4B75100E8499C /* LoginViewController_DelegatePattern.swift */,
+				5C78FB1F2BE4B77500E8499C /* WelcomeViewController_DelegatePattern.swift */,
+				5C78FB212BE5082E00E8499C /* LoginViewController_Closure.swift */,
+				5C78FB232BE5083D00E8499C /* WelcomeViewController_Closure.swift */,
+			);
+			path = 2nd;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,10 +208,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C78FB222BE5082E00E8499C /* LoginViewController_Closure.swift in Sources */,
 				5C78FAA92BDACAA600E8499C /* LoginViewController.swift in Sources */,
 				5C78FA942BDA2BD200E8499C /* ViewController.swift in Sources */,
+				5C78FB202BE4B77500E8499C /* WelcomeViewController_DelegatePattern.swift in Sources */,
+				5C78FB1C2BE4B75100E8499C /* LoginViewController_DelegatePattern.swift in Sources */,
 				5C78FA902BDA2BD200E8499C /* AppDelegate.swift in Sources */,
 				5C78FA922BDA2BD200E8499C /* SceneDelegate.swift in Sources */,
+				5C78FB242BE5083D00E8499C /* WelcomeViewController_Closure.swift in Sources */,
 				5C78FACF2BDBB8DC00E8499C /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

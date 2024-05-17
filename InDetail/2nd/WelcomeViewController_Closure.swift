@@ -1,5 +1,5 @@
 //
-//  WelcomeViewController_DelegatePattern.swift
+//  WelcomeViewController_Closure.swift
 //  InDetail
 //
 //  Created by 송여경 on 5/3/24.
@@ -7,27 +7,17 @@
 
 import UIKit
 
-protocol DataBindProtocol: AnyObject {
-    func dataBind(id: String?)
-}
-//dataBind는 loginViewController에서 extention으로 구현을 해주었음. 그것을 쓰겠다는 의미.
-//프로토콜의 위치는 보통은 위에 위치하는구나를 알았다.
-//프로토콜 : like guideline
-//프로토콜을 채택하는 타입이 클래스인지 구조체인지 열거형인지 알 수 없다.
-//그래서 프로토콜은 상속받아서 class에만 사용할 것이라고 알려줘야 한다.
-//AnyObject를 상속한 프로토콜은 클래스만 채택할 수 있어서 AnyObject를 채택.
-
-
-final class WelcomeViewController_DelegatePattern: UIViewController {
-    
-    weak var delegate: DataBindProtocol?
-    
+final class WelcomeViewController_Closure: UIViewController {
     
     private var id: String?
     
+    
+    typealias handler = ((String) -> (Void))
+    var completionHandler: handler?
+    
     private let logoImageView: UIImageView = {
         let imageView = UIImageView(frame: CGRect(x: 112, y: 87, width: 150, height: 150))
-        imageView.image = UIImage(named: "dog")
+        imageView.image = UIImage(named: "logo2")
         return imageView
     }()
     
@@ -85,18 +75,9 @@ final class WelcomeViewController_DelegatePattern: UIViewController {
     
     @objc
     private func backToLoginButtonDidTap() {
-        if let id = id {
-            delegate?.dataBind(id: id)
-        }
+        guard let id else { return }
+        completionHandler?(id)
         self.navigationController?.popViewController(animated: true)
     }
-    //if let id = id 를 통해 id 값이 nil인지 아닌지를 확인
-    //id가 nil이 아닌 경우, 델리게이트 실행. dataBind(id:id)는 위임받은 객체가 DataBind프로토콜을 채택하고 있다는 의미이다.
-    //nil일 경우 현재의 뷰컨을 navigationcontroller에서 제거하고 이전으로 돌아감.!!!
-    //옵셔널 바인딩 진행
-    //위임할 delegate 변수를 선언하고, 백 버튼을 눌렀을 때, 일을 시키는 delegate?.dataBind(id: id)를 호출해서 할일을 지시한다.
-    //그러면 데이터 바인딩 역할은 어디에서?
-    //로그인뷰컨에서!
-    
 }
 
