@@ -30,6 +30,10 @@
 		5C78FB242BE5083D00E8499C /* WelcomeViewController_Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C78FB232BE5083D00E8499C /* WelcomeViewController_Closure.swift */; };
 		5C78FBB02BF9DD8300E8499C /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C78FBAF2BF9DD8300E8499C /* MainTabBarController.swift */; };
 		5C78FBB22BF9DEFE00E8499C /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C78FBB12BF9DEFE00E8499C /* MyViewController.swift */; };
+		5C78FBB92BFA079A00E8499C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5C78FBB82BFA079A00E8499C /* SnapKit */; };
+		5C78FBBB2BFA079A00E8499C /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 5C78FBBA2BFA079A00E8499C /* SnapKit-Dynamic */; };
+		5C78FBBD2BFA6A2F00E8499C /* LoginViewController_SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C78FBBC2BFA6A2F00E8499C /* LoginViewController_SnapKit.swift */; };
+		5C78FBBF2BFA6A6300E8499C /* WelcomeViewController_SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C78FBBE2BFA6A6300E8499C /* WelcomeViewController_SnapKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +62,8 @@
 		5C78FB232BE5083D00E8499C /* WelcomeViewController_Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController_Closure.swift; sourceTree = "<group>"; };
 		5C78FBAF2BF9DD8300E8499C /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		5C78FBB12BF9DEFE00E8499C /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		5C78FBBC2BFA6A2F00E8499C /* LoginViewController_SnapKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_SnapKit.swift; sourceTree = "<group>"; };
+		5C78FBBE2BFA6A6300E8499C /* WelcomeViewController_SnapKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController_SnapKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C78FBB92BFA079A00E8499C /* SnapKit in Frameworks */,
+				5C78FBBB2BFA079A00E8499C /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +138,8 @@
 				5C78FB1F2BE4B77500E8499C /* WelcomeViewController_DelegatePattern.swift */,
 				5C78FB212BE5082E00E8499C /* LoginViewController_Closure.swift */,
 				5C78FB232BE5083D00E8499C /* WelcomeViewController_Closure.swift */,
+				5C78FBBC2BFA6A2F00E8499C /* LoginViewController_SnapKit.swift */,
+				5C78FBBE2BFA6A6300E8499C /* WelcomeViewController_SnapKit.swift */,
 			);
 			path = 2nd;
 			sourceTree = "<group>";
@@ -150,6 +160,10 @@
 			dependencies = (
 			);
 			name = InDetail;
+			packageProductDependencies = (
+				5C78FBB82BFA079A00E8499C /* SnapKit */,
+				5C78FBBA2BFA079A00E8499C /* SnapKit-Dynamic */,
+			);
 			productName = InDetail;
 			productReference = 5C78FA8C2BDA2BD200E8499C /* InDetail.app */;
 			productType = "com.apple.product-type.application";
@@ -178,6 +192,9 @@
 				Base,
 			);
 			mainGroup = 5C78FA832BDA2BD200E8499C;
+			packageReferences = (
+				5C78FBB72BFA079A00E8499C /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 5C78FA8D2BDA2BD200E8499C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -217,7 +234,9 @@
 				5C78FB222BE5082E00E8499C /* LoginViewController_Closure.swift in Sources */,
 				5C78FAA92BDACAA600E8499C /* LoginViewController.swift in Sources */,
 				5C78FBB02BF9DD8300E8499C /* MainTabBarController.swift in Sources */,
+				5C78FBBD2BFA6A2F00E8499C /* LoginViewController_SnapKit.swift in Sources */,
 				5C78FA942BDA2BD200E8499C /* ViewController.swift in Sources */,
+				5C78FBBF2BFA6A6300E8499C /* WelcomeViewController_SnapKit.swift in Sources */,
 				5C78FB202BE4B77500E8499C /* WelcomeViewController_DelegatePattern.swift in Sources */,
 				5C78FB1C2BE4B75100E8499C /* LoginViewController_DelegatePattern.swift in Sources */,
 				5C78FBB22BF9DEFE00E8499C /* MyViewController.swift in Sources */,
@@ -447,6 +466,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5C78FBB72BFA079A00E8499C /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5C78FBB82BFA079A00E8499C /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C78FBB72BFA079A00E8499C /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		5C78FBBA2BFA079A00E8499C /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C78FBB72BFA079A00E8499C /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5C78FA842BDA2BD200E8499C /* Project object */;
 }

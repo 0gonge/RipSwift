@@ -86,6 +86,6 @@ final class WelcomeViewController_Closure: UIViewController {
     //guard let부분은 id 변수가 nil이 아닌지 확인한다. id가 nil이면 return하고 종료, nil이 아니면 id 값 사용. id가 nil일 경우, 이후 코드가 실행이 안된다.
     //completionHandler?: 옵셔널 체이닝!! completionHandler가 nil이 아닌 경우에만 클로저를 호출
     //여기서 받은 id는 위에서 정의해준 string -> void 클로저로 가져다 준다. (여기에서는 Void를 반환하니까 아무일도 X)
-    //네비게이션 스택에서 현재 뷰 컨을 팝~ 없애줌. 
+    //네비게이션 스택에서 현재 뷰 컨을 팝~ 없애줌.
 }
 
