@@ -28,6 +28,8 @@
 		5C78FB202BE4B77500E8499C /* WelcomeViewController_DelegatePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C78FB1F2BE4B77500E8499C /* WelcomeViewController_DelegatePattern.swift */; };
 		5C78FB222BE5082E00E8499C /* LoginViewController_Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C78FB212BE5082E00E8499C /* LoginViewController_Closure.swift */; };
 		5C78FB242BE5083D00E8499C /* WelcomeViewController_Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C78FB232BE5083D00E8499C /* WelcomeViewController_Closure.swift */; };
+		5C78FBB02BF9DD8300E8499C /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C78FBAF2BF9DD8300E8499C /* MainTabBarController.swift */; };
+		5C78FBB22BF9DEFE00E8499C /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C78FBB12BF9DEFE00E8499C /* MyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		5C78FB1F2BE4B77500E8499C /* WelcomeViewController_DelegatePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController_DelegatePattern.swift; sourceTree = "<group>"; };
 		5C78FB212BE5082E00E8499C /* LoginViewController_Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_Closure.swift; sourceTree = "<group>"; };
 		5C78FB232BE5083D00E8499C /* WelcomeViewController_Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController_Closure.swift; sourceTree = "<group>"; };
+		5C78FBAF2BF9DD8300E8499C /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		5C78FBB12BF9DEFE00E8499C /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 		5C78FA832BDA2BD200E8499C = {
 			isa = PBXGroup;
 			children = (
+				5C78FBB12BF9DEFE00E8499C /* MyViewController.swift */,
 				5C78FA8E2BDA2BD200E8499C /* InDetail */,
 				5C78FA8D2BDA2BD200E8499C /* Products */,
 			);
@@ -104,6 +109,7 @@
 				5C78FAAA2BDAD20400E8499C /* Pretendard-Thin.otf */,
 				5C78FA9A2BDA2BD300E8499C /* LaunchScreen.storyboard */,
 				5C78FA9D2BDA2BD300E8499C /* Info.plist */,
+				5C78FBAF2BF9DD8300E8499C /* MainTabBarController.swift */,
 			);
 			path = InDetail;
 			sourceTree = "<group>";
@@ -210,9 +216,11 @@
 			files = (
 				5C78FB222BE5082E00E8499C /* LoginViewController_Closure.swift in Sources */,
 				5C78FAA92BDACAA600E8499C /* LoginViewController.swift in Sources */,
+				5C78FBB02BF9DD8300E8499C /* MainTabBarController.swift in Sources */,
 				5C78FA942BDA2BD200E8499C /* ViewController.swift in Sources */,
 				5C78FB202BE4B77500E8499C /* WelcomeViewController_DelegatePattern.swift in Sources */,
 				5C78FB1C2BE4B75100E8499C /* LoginViewController_DelegatePattern.swift in Sources */,
+				5C78FBB22BF9DEFE00E8499C /* MyViewController.swift in Sources */,
 				5C78FA902BDA2BD200E8499C /* AppDelegate.swift in Sources */,
 				5C78FA922BDA2BD200E8499C /* SceneDelegate.swift in Sources */,
 				5C78FB242BE5083D00E8499C /* WelcomeViewController_Closure.swift in Sources */,

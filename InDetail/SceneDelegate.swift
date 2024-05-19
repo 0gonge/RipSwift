@@ -33,12 +33,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let navigationController = UINavigationController(rootViewController: LoginViewController_DelegatePattern())
         // UINavigationController인스턴스도 생성해주었다. 다음 이 네비게이션 컨트롤러의 root View controller로
         //**  rootViewController는 storyboard상에서 IsInitialViewController 로 설정해주는 것과 유사합니다!
-        self.window?.rootViewController = navigationController
+        let mainTC = MainTabBarController()
+        
+        self.window?.rootViewController = mainTC
+        
     // 4. 새로운viewController인스턴스를 설정해주었다.
         self.window?.makeKeyAndVisible()
         // window를 화면에 표시하고 이를 keywindow로 설정해주는 것이디ㅏ. 키는 사용자의 입력을 받는다는 말이라고 생각하자.
         // keywindow가 뭐지?
         // key window: window가 여러개 존재할 때, 가장 앞쪽에 배치된 window를 `key window`라고 지칭한다.
+        window?.windowScene = windowScene
 
     }
 
